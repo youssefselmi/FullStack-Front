@@ -30,7 +30,7 @@
     "react-toastify": "^8.2.0",
     "request": "^2.79.0",
     "web-vitals": "^2.1.4",
-    "webpack": "^4.16.0",
+    "webpack": "^4.19.1",
     "webpack-node-externals": "^3.0.0"
   },
   "scripts": {
