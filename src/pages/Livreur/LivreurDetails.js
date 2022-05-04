@@ -4,8 +4,6 @@ import {BrowserRouter, Route, Link, useNavigate,NavLink,useParams} from "react-r
 
 import CreateIcon from '@mui/icons-material/Create';
 import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import WorkIcon from '@mui/icons-material/Work';
 import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
@@ -355,8 +353,8 @@ const DetailLivreur = () => {
                                                 <div className="container mt-3">
                                                     <h1 style={{ fontWeight: 400 }}>Welcome Harsh Pathak</h1>
 
-                                                    <Card sx={{ maxWidth: 600 }}>
-                                                        <CardContent>
+                                                    <div>
+                                                        <div>
                                                            
                                                             <div className="row">
                                                                 <div className="left_view col-lg-6 col-md-6 col-12">
@@ -376,8 +374,8 @@ const DetailLivreur = () => {
                                                                 </div>
                                                             </div>
 
-                                                        </CardContent>
-                                                    </Card>
+                                                        </div>
+                                                    </div>
                                                 </div>
 
 
