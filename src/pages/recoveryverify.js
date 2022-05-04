@@ -1,12 +1,9 @@
 import "./listecomposant.css";
-import { Link, useParams,useNavigate } from 'react-router-dom'
+import {useNavigate } from 'react-router-dom'
 
-import React, { useContext, useState,useEffect } from 'react'
-import { NavLink, useHistory } from 'react-router-dom'
-import { adddata } from './context/ContextProvider';
+import React, {useState } from 'react'
 import axios from 'axios'
 import {toast} from "react-toastify";
-import { Password } from "@mui/icons-material";
 
 export default function recoverPasswordVerify(){
 

@@ -1,15 +1,5 @@
-import React , {useState,useEffect,useContext} from "react";
-import {BrowserRouter, Route, Link, useNavigate,NavLink,useParams} from "react-router-dom";
-
-
-import CreateIcon from '@mui/icons-material/Create';
-import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
-
-
-import MailOutlineIcon from '@mui/icons-material/MailOutline';
-import WorkIcon from '@mui/icons-material/Work';
-import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
-import LocationOnIcon from '@mui/icons-material/LocationOn';
+import React , {useState,useEffect} from "react";
+import { Link, useNavigate,useParams} from "react-router-dom";
 import Header from '../../pages/Header';
 
 
@@ -133,7 +123,7 @@ const DetailServices = () => {
                                                                     <h4 className="mt-3">Type: <span >{getuserdata.type}</span></h4>
                                                                     <p className="mt-3">Max Number of Participants: <span>{getuserdata.maxPart}</span></p>
                                                                     <p className="mt-3">Disponibility: <span>{getuserdata.disponibility},{getuserdata.weekend},{getuserdata.day},{getuserdata.night}</span></p>
-                                                                    <p className="mt-3"><WorkIcon />Description: <span>{getuserdata.description}</span></p>
+                                                                    <p className="mt-3">Description: <span>{getuserdata.description}</span></p>
                                                                     <ul className="list-inline mb-0">
                                     
                                     
@@ -163,7 +153,7 @@ const DetailServices = () => {
                                                                      <p className="mt-3">Zip Code : <span>{getuserdata.zipcode}</span></p>
                                                                      <p className="mt-3">User Name : <span>Houssem Chebbi</span></p>
                                                                      <p className="mt-3">Added At : <span>{getuserdata.addedat}</span></p>
-                                                                     <p className="mt-3"><PhoneAndroidIcon />Phone Number: <span>21136520</span></p>
+                                                                     <p className="mt-3">Phone Number: <span>21136520</span></p>
                                                                      
                                                                 </div>
                                                             </div>

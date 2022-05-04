@@ -1,13 +1,8 @@
-import React , {useState,useEffect,useContext} from "react";
-import {BrowserRouter, Route, Link, useNavigate,NavLink,useParams} from "react-router-dom";
+import React , {useState,useEffect} from "react";
+import {useNavigate} from "react-router-dom";
 import "./listecomposant.css";
 
-import CreateIcon from '@mui/icons-material/Create';
-import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
-import MailOutlineIcon from '@mui/icons-material/MailOutline';
-import WorkIcon from '@mui/icons-material/Work';
-import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
-import LocationOnIcon from '@mui/icons-material/LocationOn';
+
 
 
 
@@ -385,8 +380,8 @@ const userProfile = () => {
                                                                     <img src= {getuserdata.avatar} style={{ width: 200 }} alt="profile" />
                                                                     <h3 className="mt-3">First name: <span >{getuserdata.firstName}</span></h3>
                                                                     <h3 className="mt-3">Last name : <span >{getuserdata.lastName}</span></h3>
-                                                                    <p className="mt-3"><MailOutlineIcon />Email: <span>{getuserdata.email}</span></p>
-                                                                    <p className="mt-3"><WorkIcon />Profession: <span>{getuserdata.profession}</span></p>
+                                                                    <p className="mt-3">Email: <span>{getuserdata.email}</span></p>
+                                                                    <p className="mt-3">Profession: <span>{getuserdata.profession}</span></p>
                                                                 </div>
                                                                 <div className="right_view  col-lg-6 col-md-6 col-12">
 

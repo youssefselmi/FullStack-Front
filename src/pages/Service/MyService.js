@@ -1,10 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { Link,useParams } from "react-router-dom";
-import CreateIcon from '@mui/icons-material/Create';
-import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
+import { Link } from "react-router-dom";
 import {toast} from "react-toastify";
-import { Checkbox, Collapse } from 'antd';
 
 import Header from '../../pages/Header';
 
@@ -130,8 +127,8 @@ import Header from '../../pages/Header';
 
                                   
                                 <div className="add_btn">
-              <Link to={`/updateservice/${livreur._id}`}>  <button className="btn btn-link btn-sm mx-2"><CreateIcon /></button></Link>
-              <button className="btn btn-link btn-sm mx-2" onClick={() => onDeleteService(livreur._id)}><DeleteOutlineIcon /></button>
+              <Link to={`/updateservice/${livreur._id}`}>  <button className="btn btn-link btn-sm mx-2"></button></Link>
+              <button className="btn btn-link btn-sm mx-2" onClick={() => onDeleteService(livreur._id)}></button>
               </div>
                                   
                                 

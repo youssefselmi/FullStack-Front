@@ -1,12 +1,9 @@
 import React, { useState, useEffect ,useContext} from "react";
 import axios from "axios";
-import { Link,useHistory ,useParams,useNavigate} from "react-router-dom";
-import CreateIcon from '@mui/icons-material/Create';
-import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
+import { Link ,useParams,useNavigate} from "react-router-dom";
+
 import {toast} from "react-toastify";
-import { Checkbox, Collapse } from 'antd';
-import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
-import CallIcon from '@mui/icons-material/Call';
+
 import { adddata } from '../context/ContextProvider';
 import Header from '../../pages/Header';
 
@@ -271,7 +268,7 @@ const addSignal = async (id) => {
                                   <p className="text-muted mb-4">{livreur.title}</p>
                                   
                                   
-                                   <h6 className="text-muted mb-4"><CallIcon />22 474 153</h6>
+                                   <h6 className="text-muted mb-4">22 474 153</h6>
                                   <p className="text-muted mb-4">{livreur.addedat}</p>
                                   <div className="avatar-group">
                                    

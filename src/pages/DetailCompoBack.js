@@ -1,9 +1,6 @@
-import React , {useState,useEffect,useContext} from "react";
-import {BrowserRouter, Route, Link, useNavigate,NavLink,useParams} from "react-router-dom";
+import React , {useState,useEffect} from "react";
+import { Link, useNavigate,useParams} from "react-router-dom";
 import "./listecomposant.css";
-import MailOutlineIcon from '@mui/icons-material/MailOutline';
-import WorkIcon from '@mui/icons-material/Work';
-import { CardTravel, PaidRounded } from "@mui/icons-material";
 import Header from '../pages/Header';
 
 
@@ -195,8 +192,8 @@ console.log(PF);
                                                                 <div className="left_view col-lg-6 col-md-6 col-12">
                                                                     <img src={PF+getuserdata.Image} style={{ width: 50 }} alt="profile" />
                                                                     <h3 className="mt-3">Name: <span >{getuserdata.Name}</span></h3>
-                                                                    <p className="mt-3"><MailOutlineIcon />Description: <span>{getuserdata.Description}</span></p>
-                                                                    <p className="mt-3"><WorkIcon />Marque: <span>{getuserdata.Marque}</span></p>
+                                                                    <p className="mt-3">Description: <span>{getuserdata.Description}</span></p>
+                                                                    <p className="mt-3">Marque: <span>{getuserdata.Marque}</span></p>
                                                                 </div>
                                                                 <div className="right_view  col-lg-6 col-md-6 col-12">
 
@@ -206,7 +203,7 @@ console.log(PF);
                                                                 </div>
                                                             </div>
                                                             <div >
-                                                                 <button onClick={handlePayment} className="btn buy_btn mx-2"><PaidRounded /> Buy Now!</button>
+                                                                 <button onClick={handlePayment} className="btn buy_btn mx-2">Buy Now!</button>
                                                             </div>
 
                                                 </div>

@@ -1,9 +1,5 @@
 import React , {useState,useEffect,useContext} from "react";
 import {useNavigate, useParams} from "react-router-dom";
-import ItemDataService from "../services/item.services";
-//import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
-//import BalanceIcon from '@mui/icons-material/Balance';
-//import SvgIcon from '@mui/material/SvgIcon'
 
 import Header from '../pages/Header';
 
