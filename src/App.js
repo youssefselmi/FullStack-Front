@@ -108,7 +108,7 @@ function App() {
           <Route path='/detailpiece/:id' element={<DetailsBrokenPiece/>} />
           <Route path='/addbesoin' element={<AjoutBesoin/>} />
           <Route path='/Listebesoins' element={<Listebesoins/>} />
-          <Route path='/acceuil' element={<Acceuil/>} />
+          <Route path='/' element={<Acceuil/>} />
           <Route path='/header' element={<Header/>} />
 
 
@@ -148,7 +148,7 @@ function App() {
           <Route path='/detailServices/:id' element={<DetailServices/>} />    
           <Route path='/mail' element={<Mailer/>} />
           <Route path='/email' element={<Email/>} />
-          <Route path='/' element={<Login/>} />
+          <Route path='/acceuil' element={<Login/>} />
           <Route path='/service' element ={<ListServicebackend/>}/>
           <Route path='/updatelivreur/:id' element ={<UpdateLivreur/>}/>
           <Route path='/updateservice/:id' element ={<UpdateService/>}/>

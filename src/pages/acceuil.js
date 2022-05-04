@@ -107,7 +107,11 @@ const Acceuil = () => {
                 </h3>
                 <p className="banner-sub">Register Now, And Join us</p>
                 <div className="d-flex align-items-center buttons-banner">
+                <Link to={`/register`}>
+
                   <a href="contact.html" className="btn btn-style mt-lg-5 mt-4">Register Now</a>
+                  </Link>
+
                 </div>
               </div>
             
