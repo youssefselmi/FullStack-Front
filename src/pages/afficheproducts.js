@@ -103,13 +103,11 @@ class afficheproducts extends React.Component{
 
     render(){
       
-        const {items,Curritem,prix}=this.state;
+        const {items,prix}=this.state;
 
         
          
-        
-        
-        var {image}="C:\Users\iheb\Desktop\PIIII\Pi back\pi";
+    
         
        
         return(
