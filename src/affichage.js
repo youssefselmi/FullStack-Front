@@ -105,7 +105,6 @@ class affichage extends React.Component{
          
         
         
-        var {image}="C:\Users\iheb\Desktop\PIIII\Pi back\pi";
         
        
         return(
