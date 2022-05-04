@@ -1,17 +1,8 @@
 import React from "react";
-import ReactDOM from 'react-dom';
 import ItemDataService from "../services/item.services"
 import {  Link } from "react-router-dom";
-//import 'react-notifications-component/dist/theme.css'
-/*import { ReactNotifications } from 'react-notifications-component'
-import {NotificationContainer, NotificationManager} from 'react-notifications';
-import { Store } from "react-notifications-component";
-import Switch from "react-switch";*/
-import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
-import FavoriteIcon from '@material-ui/icons/Favorite';
-import Favorite from "@material-ui/icons/Favorite";
-import IconButton from '@material-ui/core/IconButton';
-import axios from "axios";
+
+
 import http from "../http-common";
 import Header from '../pages/Header';
 
@@ -252,14 +243,12 @@ class afficheproducts extends React.Component{
                                                    
                                                     
                                                     { !item.favoris && 
-<IconButton onClick={() => { this.addtofavorit=this.addtofavorit.bind(item._id,item) }}  aria-label="delete" color="primary">
-<FavoriteBorderIcon></FavoriteBorderIcon>
-</IconButton>
+<button onClick={() => { this.addtofavorit=this.addtofavorit.bind(item._id,item) }}  aria-label="delete" color="primary">
+</button>
 }
 {item.favoris &&
-<IconButton onClick={() => { this.handleChange(!this.favoris) }} aria-label="delete" color="primary">
-<Favorite></Favorite>
-</IconButton>
+<button onClick={() => { this.handleChange(!this.favoris) }} aria-label="delete" color="primary">
+</button>
 }
 <Link to={`/details/${item._id}`}>
                                                                 <button className="btn btn-dark" >Details</button>
