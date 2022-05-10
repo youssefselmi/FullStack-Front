@@ -112,9 +112,8 @@ class affichage extends React.Component{
         
         
         var {image}="C:\Users\iheb\Desktop\PIIII\Pi back\pi";
-
-
-     
+        
+       
         return(
             <div>
                 
@@ -257,7 +256,7 @@ class affichage extends React.Component{
                                         <div class="card">
                                             <div class="card-body">
                                                 <div class="product-img position-relative">
-                                                    <img height='220' widht='220' src={`https://fullstack-back-app.herokuapp.com/${path}`} />
+                                                    <img height='220' widht='220' src={`http://localhost:3000/${path}`} />
                                              
 
                                                     
