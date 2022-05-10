@@ -234,6 +234,13 @@ const addSignal = async (id) => {
                                     
                                   
                         <ul className="list-inline mb-0">
+
+
+                        <li className="list-inline-item me-3">
+                          < Link to={`/myservice`}>
+                   <button type="button" className="btn btn-outline-success btn-rounded waves-effect waves-light">My services</button>
+                    </Link></li>
+
                         <li className="list-inline-item me-3">
                           < Link to={`/ajoutservice`}>
                    <button type="button" className="btn btn-outline-success btn-rounded waves-effect waves-light">+Add new service</button>

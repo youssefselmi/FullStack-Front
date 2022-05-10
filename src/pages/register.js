@@ -37,8 +37,9 @@ export default function Register(){
         });
 
         console.log("AFTER FETCH");
+
         const data = await res.json();
-        console.log(data);
+        //console.log(data);
         
 
        // localStorage.setItem("user_id", data.result._id);
@@ -52,7 +53,7 @@ export default function Register(){
         {
             console.log("ENTRER THE ELSE.")
             history("/registerVerification")
-            toast.success("Your account has been registered. You can now Sign in");
+            toast.success("An email has been sent to you, please confirm the code to proceed.");
            
         }
 
