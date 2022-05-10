@@ -1,5 +1,5 @@
 import React , {useState,useEffect} from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate,Link } from "react-router-dom";
 import "./listecomposant.css";
 import axios from "axios";
 import {toast} from "react-toastify";
@@ -120,85 +120,8 @@ $(document).ready(function () {
 
         <div>
 
+
 <Header/>
-
-
-{/* 
-                
-<div class="vertical-menu">
-
-<div data-simplebar class="h-100">
-
-    
-    <div id="sidebar-menu">
-       
-        <ul class="metismenu list-unstyled" id="side-menu">
-        <li class="menu-title" key="t-apps">Menu</li>
-         <li>
-                <a href="myproducts" class="waves-effect">
-                    <i class="bx bx-user"></i>
-                    <span key="t-chat">MY ITEMS</span>
-                </a>
-            </li>
-        <li>
-                <a href="addUser" class="waves-effect">
-                    <i class="bx bx-file"></i>
-                    
-                    <span key="t-file-manager">Broken Piece</span>
-                </a>
-            </li>
-
-            
-
-            <li>
-                <a href="afficher" class="waves-effect">
-                    <i class="bx bx-chat"></i>
-                    <span key="t-chat">BROKEN ITEMS</span>
-                </a>
-            </li>
-            
-
-            
-
-           
-           
-            <li>
-                <a href="Home" class="waves-effect">
-                    <i class="bx bx-band-aid"></i>
-                    <span key="t-chat">SELL ITEMS</span>
-                </a>
-            </li>
-            <li>
-                <a href="affichage" class="waves-effect">
-                    <i class="bx bx-chat"></i>
-                    <span key="t-chat">NEW ITEMS</span>
-                </a>
-            </li>
-
-           
-            <li>
-                <a href="list" class="waves-effect">
-                    <i class="bx bx-car"></i>
-                    <span key="t-chat">Delivery</span>
-                </a>
-            </li>
-            <li>
-                <a href="listService" class="waves-effect">
-                    <i class="bx bx-book"></i>
-                    <span key="t-chat"> Services</span>
-                </a>
-            </li>
-
-                                        
-
-        </ul>
-    </div>
- 
-</div>
-</div> */}
-
-
-
 
 
 
@@ -239,6 +162,88 @@ $(document).ready(function () {
 
 
             
+
+
+             
+            <div class="vertical-menu">
+
+<div data-simplebar class="h-100">
+
+    
+    <div id="sidebar-menu">
+       
+        <ul class="metismenu list-unstyled" id="side-menu">
+        <li class="menu-title" key="t-apps">Menu</li>
+         <li>
+                <a href="myproducts" class="waves-effect">
+                    <i class="bx bx-user"></i>
+                    <Link to={`/myproducts`}>
+
+                    <span key="t-chat">MY ITEMS</span>
+                    </Link>
+
+                </a>
+            </li>
+        <li>
+                <a href="addComposant" class="waves-effect">
+                    <i class="bx bx-file"></i>
+                    <Link to={`/listecomposant`}>
+
+                    <span key="t-file-manager">Broken Pieces</span>
+                    </Link>
+
+                </a>
+            </li>
+
+        
+            
+
+
+           
+            <li>
+                <a href="livreurback" class="waves-effect">
+                    <i class="bx bx-car"></i>
+                    <Link to={`/livreurBack`}>
+                    <span key="t-chat">Delivery</span>
+                    </Link>
+
+                </a>
+            </li>
+
+            <li>
+                <a href="service" class="waves-effect">
+                    <i class="bx bx-book"></i>
+                    <Link to={`/service`}>
+
+                    <span key="t-chat"> Services</span>
+                    </Link>
+
+                </a>
+            </li>
+
+
+
+            <li>
+                <a href="service" class="waves-effect">
+                    <i class="bx bx-book"></i>
+                    <Link to={`/dashboard`}>
+                    <span key="t-chat"> Users</span>
+                    </Link>
+
+                </a>
+            </li>
+
+
+                                        
+
+        </ul>
+    </div>
+ 
+</div>
+</div>
+
+
+
 
 
 
