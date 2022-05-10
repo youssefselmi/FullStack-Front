@@ -23,7 +23,7 @@ export default function Register(){
 
 
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = async (e,_id) => {
         e.preventDefault();
         console.log("BEFORE FETCH");
         const res = await fetch("http://localhost:3000/users/register", {
