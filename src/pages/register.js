@@ -42,7 +42,7 @@ export default function Register(){
         //console.log(data);
         
 
-       // localStorage.setItem("user_id", data.result._id);
+       localStorage.setItem("user_id", data.result._id);
       
 
    if(res.status === 400){
