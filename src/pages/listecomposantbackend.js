@@ -114,57 +114,62 @@ $(document).ready(function () {
          <li>
                 <a href="myproducts" class="waves-effect">
                     <i class="bx bx-user"></i>
+                    <Link to={`/myproducts`}>
+
                     <span key="t-chat">MY ITEMS</span>
+                    </Link>
+
                 </a>
             </li>
         <li>
                 <a href="addComposant" class="waves-effect">
                     <i class="bx bx-file"></i>
-                    
-                    <span key="t-file-manager">Broken Piece</span>
+                    <Link to={`/listecomposant`}>
+
+                    <span key="t-file-manager">Broken Pieces</span>
+                    </Link>
+
                 </a>
             </li>
 
+        
             
 
-            <li>
-                <a href="afficher" class="waves-effect">
-                    <i class="bx bx-chat"></i>
-                    <span key="t-chat">BROKEN ITEMS</span>
-                </a>
-            </li>
-            
-
-            
-
-           
-           
-            <li>
-                <a href="Home" class="waves-effect">
-                    <i class="bx bx-band-aid"></i>
-                    <span key="t-chat">SELL ITEMS</span>
-                </a>
-            </li>
-            <li>
-                <a href="affichage" class="waves-effect">
-                    <i class="bx bx-chat"></i>
-                    <span key="t-chat">NEW ITEMS</span>
-                </a>
-            </li>
 
            
             <li>
                 <a href="livreurback" class="waves-effect">
                     <i class="bx bx-car"></i>
+                    <Link to={`/livreurBack`}>
                     <span key="t-chat">Delivery</span>
+                    </Link>
+
                 </a>
             </li>
+
             <li>
                 <a href="service" class="waves-effect">
                     <i class="bx bx-book"></i>
+                    <Link to={`/service`}>
+
                     <span key="t-chat"> Services</span>
+                    </Link>
+
                 </a>
             </li>
+
+
+
+            <li>
+                <a href="service" class="waves-effect">
+                    <i class="bx bx-book"></i>
+                    <Link to={`/dashboard`}>
+                    <span key="t-chat"> Users</span>
+                    </Link>
+
+                </a>
+            </li>
+
 
                                         
 
