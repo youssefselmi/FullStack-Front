@@ -31,7 +31,7 @@ export default function recoverPasswordVerify(){
             })
         });*/
         
-        const res = await axios.post("https://fullstack-back-app.herokuapp.com/users/PasswordRecoveryVerify",{email,newPassword,otp});
+        const res = await axios.post("http://localhost:3000/users/PasswordRecoveryVerify",{email,newPassword,otp});
 
        
         

@@ -22,7 +22,7 @@ const Dash = () => {
     );
 
     const getUsers = async () => {
-        const response = await axios.get("https://fullstack-back-app.herokuapp.com/users/afficher");
+        const response = await axios.get("http://localhost:3000/users/afficher");
         if (response.status === 200){
             setData(response.data);
         }
@@ -40,7 +40,7 @@ const Dash = () => {
 /////////////////// Delete //////////////////////////////
     const onDeleteUser = async (id) => {
       
-            const response = await axios.delete(`https://fullstack-back-app.herokuapp.com/users/delete/${id}`);
+            const response = await axios.delete(`http://localhost:3000/users/delete/${id}`);
             if (response.status === 200)
             {
                 toast.success(response.data);
@@ -50,7 +50,7 @@ const Dash = () => {
 
     const onBanUser = async (id) => {
       
-            const response = await axios.put(`https://fullstack-back-app.herokuapp.com/users/ban/${id}`);
+            const response = await axios.put(`http://localhost:3000/users/ban/${id}`);
             if (response.status === 200)
             {
                 toast.success(response.data);
@@ -61,7 +61,7 @@ const Dash = () => {
 
     const onUnBanUser = async (id) => {
       
-        const response = await axios.put(`https://fullstack-back-app.herokuapp.com/users/unban/${id}`);
+        const response = await axios.put(`http://localhost:3000/users/unban/${id}`);
         if (response.status === 200)
         {
             toast.success(response.data);

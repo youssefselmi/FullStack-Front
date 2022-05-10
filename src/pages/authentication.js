@@ -22,7 +22,7 @@ const Authentication = ()=>{
 
             //const credentials = [email,password];
             //console.log("credentials are : "+credentials);
-           const response = await axios.post("https://fullstack-back-app.herokuapp.com/auth/login",{email,password});
+           const response = await axios.post("http://localhost:3000/auth/login",{email,password});
 
        
   /*              

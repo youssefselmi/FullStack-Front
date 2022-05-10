@@ -23,7 +23,7 @@ const userProfile = () => {
 
     async function getdata() {
 
-    const res = await fetch(`https://fullstack-back-app.herokuapp.com/users/${id}`, {
+    const res = await fetch(`http://localhost:3000/users/${id}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json"

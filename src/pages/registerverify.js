@@ -32,7 +32,7 @@ export default function RegisterVerifiy(){
         });*/
         const userId = localStorage.getItem("user_id");
         console.log(userId,otp)
-        const res = await axios.post("https://fullstack-back-app.herokuapp.com/users/verify-email",{userId,otp});
+        const res = await axios.post("http://localhost:3000/users/verify-email",{userId,otp});
 
        
         

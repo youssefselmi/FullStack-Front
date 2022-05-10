@@ -32,7 +32,7 @@ export default function passwordRecover(){
         });*/
         
         
-        const res = await axios.post("https://fullstack-back-app.herokuapp.com/users/PasswordRecovery",{email});
+        const res = await axios.post("http://localhost:3000/users/PasswordRecovery",{email});
 
        
         

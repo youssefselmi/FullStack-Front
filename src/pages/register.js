@@ -26,7 +26,7 @@ export default function Register(){
     const handleSubmit = async (e) => {
         e.preventDefault();
         console.log("BEFORE FETCH");
-        const res = await fetch("https://fullstack-back-app.herokuapp.com/users/register", {
+        const res = await fetch("http://localhost:3000/users/register", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

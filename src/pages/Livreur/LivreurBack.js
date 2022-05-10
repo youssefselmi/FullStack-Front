@@ -142,10 +142,8 @@ const AdminLivreur = () => {
 
 
                                                                 <td>
-
-
-                                                                    <Link to={`/DetailLivreur/${livreur._id}`}>
-                                                                        <button className="btn btn-dark" >View</button>
+                                                                      <Link to={`/updatelivreur/${livreur._id}`}>
+                                                                        <button className="btn btn-success" >Update</button>
                                                                     </Link>
 
                                                                     <button class="btn btn-danger" onClick={() => onDeleteComposant(livreur._id)}> Delete</button>

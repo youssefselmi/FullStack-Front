@@ -55,11 +55,7 @@ const displaylivreurs=livreurs
               </div>
               <div className="px-4 py-3 border-top">
                 <ul className="list-inline mb-0">
-                  <li className="list-inline-item me-3">
-                  <Link to={`/updatelivreur/${livreur._id}`}>
-                    <button type="button" className="btn btn-success btn-rounded waves-effect waves-light">update</button>
-                    </Link>
-                  </li>
+                
                   <li className="list-inline-item me-3">
                   <Link to={`/email`}>
                     <button type="button" className="btn btn-danger btn-rounded waves-effect waves-light">Report</button>
