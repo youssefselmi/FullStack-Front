@@ -3,8 +3,8 @@ import {useNavigate} from "react-router-dom";
 import "./listecomposant.css";
 
 
-import Header from './pages/Header';
 
+import Header from '../pages/Header';
 
 
 
