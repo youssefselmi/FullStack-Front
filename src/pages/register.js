@@ -23,7 +23,7 @@ export default function Register(){
 
 
 
-    const handleSubmit = async (e,_id) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         console.log("BEFORE FETCH");
         const res = await fetch("http://localhost:3000/users/register", {
@@ -41,7 +41,7 @@ export default function Register(){
         console.log(data);
         
 
-        localStorage.setItem("user_id", data.result._id);
+       // localStorage.setItem("user_id", data.result._id);
       
 
    if(res.status === 400){
