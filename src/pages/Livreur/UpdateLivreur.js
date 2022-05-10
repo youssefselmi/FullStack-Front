@@ -1,12 +1,7 @@
 import React , {useState,useEffect,useContext} from "react";
-
 import { Link, useParams,useNavigate } from 'react-router-dom'
-
-import Axios from "axios";
-
-import {toast} from "react-toastify";
-
 import { updatedata } from "../context/ContextProvider";
+import Header from '../../pages/Header';
 
 const UpdateLivreur = () => {
 
@@ -130,6 +125,8 @@ const UpdateLivreur = () => {
               <div className="card overflow-hidden">
                 <div className="bg-primary bg-soft">
                   <div className="row">
+                  <Header/>
+
                     <div className="col-7">
                       <div className="text-primary p-4">
                         <h5 className="text-primary">Update</h5>
