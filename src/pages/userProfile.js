@@ -3,6 +3,8 @@ import {useNavigate} from "react-router-dom";
 import "./listecomposant.css";
 
 
+import Menu from '../pages/Header';
+
 
 
 
@@ -72,6 +74,7 @@ const userProfile = () => {
         <div>
 
 
+<Header/>
 
 
 

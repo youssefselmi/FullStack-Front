@@ -11,6 +11,7 @@ import 'jquery/dist/jquery.min.js';
 import "datatables.net-dt/js/dataTables.dataTables"
 import "datatables.net-dt/css/jquery.dataTables.min.css"
 import $ from 'jquery'; 
+import Header from '../pages/Header';
 
 const Dash = () => {
     const history = useNavigate();
@@ -119,6 +120,7 @@ $(document).ready(function () {
 
         <div>
 
+<Header/>
 
 
 {/* 

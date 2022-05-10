@@ -52,10 +52,18 @@ const Acceuil = () => {
 
                           </li>
                           <li className="nav-item">
+                          <Link to={`/affichage`}>
+
                             <a className="nav-link" href="courses.html">Items</a>
+                            </Link>
+
                           </li>
                           <li className="nav-item">
+                          <Link to={`/afficher`}>
+
                             <a className="nav-link" href="contact.html">Broken Pieces</a>
+                            </Link>
+
                           </li>
 
 
