@@ -1,6 +1,6 @@
 import axios from "axios";
 export default axios.create({
-  baseURL: "http://localhost:3000/items",
+  baseURL: "https://fullstack-back-app.herokuapp.com/items",
   headers: {
     "Content-type": "application/json"
   }
