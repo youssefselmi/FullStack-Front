@@ -85,9 +85,11 @@ import emailjs from "emailjs-com";
                           </label>
                         </div>
                         <div className="mt-3 d-grid">
-                        
+                        <Link to={`/add`}>
+
                           <button className="btn btn-primary waves-effect waves-light" type="submit" >Add Request</button>
-                        
+                          </Link>
+
                         </div>
                         <div className="mt-4 text-center">
                           <h5 className="font-size-14 mb-3">Sign in with</h5>
