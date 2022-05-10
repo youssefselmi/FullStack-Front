@@ -43,6 +43,14 @@ const Acceuil = () => {
                             </Link>
 
                           </li>
+
+                          <li className="nav-item">
+                          <Link to={`/auth`}>
+
+                            <a className="nav-link active" aria-current="page" href="index.html">Login</a>
+                            </Link>
+
+                          </li>
                           <li className="nav-item">
                             <a className="nav-link" href="courses.html">Items</a>
                           </li>

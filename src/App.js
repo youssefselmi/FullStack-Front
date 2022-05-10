@@ -148,7 +148,7 @@ function App() {
           <Route path='/detailServices/:id' element={<DetailServices/>} />    
           <Route path='/mail' element={<Mailer/>} />
           <Route path='/email' element={<Email/>} />
-          <Route path='/acceuil' element={<Login/>} />
+          <Route path='/acceuil' element={<Acceuil/>} />
           <Route path='/service' element ={<ListServicebackend/>}/>
           <Route path='/updatelivreur/:id' element ={<UpdateLivreur/>}/>
           <Route path='/updateservice/:id' element ={<UpdateService/>}/>
